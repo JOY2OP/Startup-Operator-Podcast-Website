@@ -1,0 +1,48 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import Episodes from '../components/Episodes.astro'
+import Wavy from '../components/Wavy.astro'
+import Footer from '../components/Footer.astro'
+import Listen from '../components/Listen.astro';
+---
+<style>
+	  .bg-grid {
+		background-size: 40px 40px;
+  		/* background-color: #0F172A; */
+  		background-image: linear-gradient(to right, rgba(156, 163, 175, 0.04) 1px, transparent 1px),
+                    		linear-gradient(to bottom, rgba(156, 163, 175, 0.04) 1px, transparent 1px);
+  		background-position: center top;
+		image-rendering: pixelated;
+	
+		mask-image: linear-gradient(transparent, 10%, white, 90%, transparent); 
+
+	  }
+
+  </style>
+
+<!-- background color -->
+<Layout title="Startup Operator  ">
+	<div class="bg-slate-900 ">
+		
+			<Navbar />
+			<Hero />
+			
+	</div>
+	<!-- <button type="button" class="text-white bg-[#050708] hover:bg-[#050708]/80 focus:ring-4 focus:outline-none focus:ring-[#050708]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:hover:bg-[#050708]/40 dark:focus:ring-gray-600 mr-2 mb-2">
+		<img src="/listen-on-spotify.png" alt="Spotify-Logo" >
+	</button> -->
+
+	
+		<Wavy />
+		<Episodes />
+
+		<Listen>
+			<p class="text-4xl font-bold my-4 sm:text-5xl p-2 text-center text-slate-900" slot="heading">
+				Find us on:
+			</p> 
+		</Listen>
+
+		<Footer/>
+	</Layout>

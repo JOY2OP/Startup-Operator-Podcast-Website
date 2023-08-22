@@ -1,0 +1,18 @@
+---
+import Episodes from '../pages/episodes/[page].astro';
+const page = 1; // Set the page number here
+---
+<!-- ---
+const {page} = Astro.props
+---
+
+<div>
+    <h1>Page {page.currentPage}</h1>
+    <ul>
+    {page.data.map((episode) => <li>{episode.name}</li>)}
+    </ul>
+    {page.url.prev ? <a href={page.url.prev}>Previous</a> : null}
+    {page.url.next ? <a href={page.url.next}>Next</a> : null}
+</div> -->
+
+<Episodes page={page} />

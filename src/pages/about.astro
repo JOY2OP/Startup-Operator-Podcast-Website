@@ -1,0 +1,63 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Wavy from '../components/Wavy.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title='About'>
+<div class="bg-slate-900 pb-16">
+<Navbar/>
+<!-- Mission -->
+    <div class="grid items-center mx-auto my-auto mt-8 py-8 ">
+        
+        <h1 class="text-center text-4xl font-extrabold   text-gray-900 md:text-5xl lg:text-6xl dark:text-white ">
+            <span class="p-2  text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">
+               Our Mission 
+            </span>
+        </h1>
+    
+        <p class="text-center leading-8 mb-4 mt-4 pt-4 text-xl font-light text-gray-400 lg:text-3xl sm:px-16 mx-6 xl:px-48  dark:text-white">
+           To <span class="font-medium underline decoration-pink-500">provide </span>valuable insights, practical tips, and thought-provoking discussions to 
+           <span class="font-medium underline decoration-red-500">aspiring entrepreneurs</span>, 
+            seasoned business <br class="hidden lg:block">leaders, and <span class="font-medium underline decoration-yellow-500">curious minds</span>.
+        </p>
+    </div>
+
+<!-- about host -->
+<div class="grid  mx-auto my-auto mt-4 py-8 items-center">
+    <h1 class=" text-4xl text-center font-extrabold text-gray-900 md:text-5xl lg:text-6xl dark:text-white ">
+        <span class="p-2 text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 via-red-500 to-pink-500">
+           About the Host 
+        </span>
+        
+        <p class="text-center leading-8 mb-4 mt-4 pt-4 text-xl font-light text-gray-400 lg:text-3xl sm:px-16 mx-6 xl:px-48 dark:text-white">
+            Hey👋, I am <span class="font-medium underline decoration-pink-500">Roshan Cariappa</span>, and I have embarked on the zero to 
+            one journey multiple times 
+            over the last 
+            <span class="font-medium underline decoration-yellow-500">12 years </span>
+            at early/growth-stage startups as both an 
+            <span class="font-medium underline decoration-red-500">operator and founder</span>. <br> <br>
+            Currently, I lead the Marketing team at Vymo- a Sequoia & Emergence-funded SaaS startup 
+            that is disrupting Sales & Distribution <br class="hidden lg:block"> for Financial Service.  
+        </p>
+    </h1>
+    <figcaption class="flex justify-center items-center mt-6 space-x-3">
+        <img class="w-10 h-10 rounded-full" src="/rc.jpg" alt="profile picture">
+        <div class="flex items-center divide-x-2 divide-gray-300 dark:divide-gray-700">
+            <cite class="pr-3 font-medium text-gray-900 dark:text-white">Roshan Cariappa</cite>
+            <cite class="pl-3 text-sm text-gray-500 dark:text-gray-400">CMO at Vymo</cite>
+        </div>
+        
+    </figcaption>
+
+   
+</div>
+
+
+</div>
+
+
+
+<Footer />
+</Layout>
